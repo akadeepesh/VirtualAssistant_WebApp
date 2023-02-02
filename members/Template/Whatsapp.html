@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'whatsapp.png' %}">
+    <link rel="stylesheet" href="{% static 'Whatsapp.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+
+<body>
+    <form class="form" action="try.py" method="post/get">
+        <h1 class="title"> <u id="gap">Enter Details Here!</u></h1>
+        <div class="main">
+            <i class="fas fa-user"></i>
+                <input class="inp1" placeholder="Receivers Name" name="f-name" type="text" required onfocus="this.placeholder=''" onblur="this.placeholder='Receivers Name'"><br>
+        </div>
+        <div class="main">
+            <i class="fa fa-phone"></i>
+            <input class="inp2" placeholder="Receivers Ph. Number"  onfocus="this.placeholder=''" onblur="this.placeholder='Receivers Ph. Number'" type="tel" pattern="[0-9]{10}"><br><br>
+        </div>
+        <input class="sub" value="SUBMIT" type="submit">
+        <p id="para">
+            <b id="bold">Welcome To A DC Project!!!</b><br>
+            This Is A Virtual Assistant Just Like Alexa/Siri/Cortana etc...<br>
+            DC Can Help You In Multiple Ways Like<br>
+            Playing Song, Google Search, Calculations, Jokes And much more.<br><br>Refresh Page For Another Entry!!!<br>Can Click DC Icon To Do So.
+        </p>
+        <p id="para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Obcaecati ea eligendi autem non repellendus error,<br>
+            nihil ab officia impedit magnam architecto repudiandae.<br>
+            Error ratione qui reprehenderit et accusantium ipsum quos.
+        </p>
+        <script src="{% static 'Functions.js' %}"></script>
+    </form>
+    <nav class="nav">
+        <img onClick="window.location.reload();" id="image" src="{% static 'DC.jpg' %}" alt="Logo">
+        <label class="home"> <a href="/">Home</a></label>
+        <label onclick="text()" class="about">About</label>
+        <label onclick="text1()" class="working">Working</label>
+    </nav>
+
+</body>
+</html>

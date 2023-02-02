@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="{% static 'Home.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'Home.css' %}">
+    <title>DC</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <ul class="menuItems">
+                <label class="decode"><a href="/">DeCoder</a></label>
+                <li><label data-item='Home'>Home</label></li>
+                <li><label data-item='About'>About<label></li>
+                <li><label data-item='Projects'>Projects<label></li>
+                <li><label data-item='Blog'>Blog</label></li>
+                <li><label data-item='Contact'>Contact</label></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="pack">
+        <img id="DC" onclick="func()" src="{% static 'DC.jpg' %}" alt="Logo">
+        <img src="{% static 'DC.svg' %}" alt="Google" class="image" />
+        <textarea id="textbox" contenteditable></textarea>
+        <!-- <a href="Whatsapp.html">Whatsapp</a>
+        <a href="Insta.html">Instagram</a> -->
+    </div>
+    <audio id="myAudio" controls hidden>
+        <source src="{% static 'command.mp3' %}" style="display:none;" type="audio/mpeg">
+    </audio>
+    <!-- <div class="words" contenteditable>
+        <p id="p"></p>
+    </div> -->
+</body>
+</html>
